@@ -234,13 +234,19 @@ a{
     margin-top: 12px;
 }
 .categories .title,
-.about_us .title{
+.about_us .title,
+.catalog .title,
+.shops .title,
+.contacts .title{
     width: 100%;
     background-color: #FDCF00;
     padding: 11px 20px;
 }
 .categories .title h3,
-.about_us .title h3{
+.about_us .title h3,
+.catalog .title h1,
+.shops .title h1,
+.contacts .title h1{
     font-size: 36px;
     font-weight: normal;
     margin: 0;
@@ -463,6 +469,451 @@ a{
 .footer_payment .footer_payment_img img{
     width: 87%;
 }
+
+
+
+/* catalog */
+
+
+
+
+.catalog{
+    margin-top: 30px;
+}
+
+
+.catalog_container{
+    padding-top: 30px;
+    padding-bottom: 112px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.catalog_item{
+    flex-basis: 49%;
+    margin-bottom: 20px;
+    box-shadow: 0px 1px 5.88px 0.12px rgb(121 121 121 / 80%);
+    background-color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.catalog_item .img{
+    text-align: center;
+}
+.catalog_item span{
+    font-size: 24px;
+    margin-top: 10px;
+    display: block;
+    color: #000;
+}
+
+
+.catalog_item:hover{
+    background-color: #FDD116;
+}
+
+.catalog_item:hover span{
+    color: #fff;
+}
+
+.shops{
+    margin-top: 30px;
+}
+
+
+
+.shops .title{
+    margin-bottom: 40px;
+}
+
+
+.phone_mail{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 88px;
+    background-color: #F9F9F9;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+.phone_mail div span{
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.phone_mail div a{
+    font-size: 30px;
+    color: #000;
+}
+
+.button_tabs{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+
+
+
+.button_tabs .button_tabs_btn{
+    box-shadow: 0px 1px 5.88px 0.12px rgb(121 121 121 / 80%);
+    display: block;
+    font-size: 24px;
+    color: #000;
+    padding: 20px 19px;
+}
+
+
+
+.button_tabs .button_tabs_btn.tabs_btn-active{
+    background-color: #FDCF00;
+    color: #fff;
+}
+
+
+
+
+
+
+
+.block_tabs_content{
+    margin-top: 25px;
+    padding: 0 20px;
+}
+
+.block_tabs_content ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.block_tabs_content ul li{
+    display: flex;
+}
+
+
+.block_tabs_content ul li span{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.block_tabs_content ul li .icon{
+    min-width: 40px;
+    text-align: center;
+}
+
+
+
+
+
+.block_tabs_content ul > li + li{
+    margin-top: 20px;
+}
+
+.shops_content{
+    margin-top: 50px;
+}
+
+
+.shops_content h3{
+    font-size: 36px;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.shops_content_block{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.shops_content_item{
+    padding: 8px;
+    flex-basis: 47%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0px 1px 5.88px 0.12px rgb(121 121 121 / 80%);
+}
+
+.shops_content_item .img{
+    height: 213px;
+   
+}
+.shops_content_item .img img{
+    width: 100%;
+    height: 100%;
+}
+.shops_content_item .txt{
+    background-color: #FFD231;
+    padding: 20px 0;
+    text-align: center;
+    
+}
+
+.shops_content_item .txt span{
+    
+    font-size: 20px;
+    color: #000;
+    
+}
+
+.shops_content_item:hover .txt span{
+    color: #fff;
+}
+
+.taggle_circle{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.taggle_circle .taggle_item{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #C9C9C9;
+}
+
+.taggle_circle > .taggle_item + .taggle_item{
+    margin-left: 40px;
+}
+
+.taggle_circle .taggle_item.taggle_item-active{
+    background-color: #FDCF00;
+}
+.build_map{
+    text-align: center;
+    margin-top: 30px;
+}
+.map_block{
+    background-color: #F9F9F9;
+    
+    margin: 0 -20px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.map_block h3{
+    padding-left: 20px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.map_block .map img{
+    width: 100%;
+}
+
+.block_tabs_content{
+    display: none;
+}
+
+.block_tabs_content.block_tabs_content-active{
+    display: block;
+}
+
+
+
+
+
+/* contacts */
+
+.contacts .title{
+    margin-top: 30px;
+}
+
+
+.contacts .phone_mail{
+    margin-top: 20px;
+}
+
+.contacts_wrapepr{
+    padding: 0 20px;
+    margin-top: 45px;
+}
+
+
+.contacts_shops{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts_shops .left{
+    width: 400px;
+   
+}
+.contacts_shops .left .title_shops{
+    width: 100%;
+    box-shadow: 0px 1px 5.88px 0.12px rgb(121 121 121 / 80%);
+    text-align: center;
+}   
+
+.contacts_shops .left .title_shops span{
+    font-size: 24px;
+    display: block;
+    padding: 17px 0;
+}
+
+
+.contacts_shops .left .info_contacts{
+    background-color: #FDCF00;
+    width: 100%;
+    padding: 35px 0 20px 12px;
+    margin-top: 22px;
+}
+
+.contacts_shops .left .info_contacts span{
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+.contacts_shops .left .info_contacts p{
+    font-size: 24px;
+    margin: 0;
+    font-weight: 600;
+}
+
+
+
+.contacts_shops .left .info_contacts .date_week{
+    margin-bottom: 16px;
+}
+
+
+
+
+.moj_dvor{
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+.contacts .map_block{
+    margin: 0;
+    margin-top: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

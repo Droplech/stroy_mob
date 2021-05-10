@@ -25,8 +25,22 @@ $(document).ready(function(){
         $('.burger_menu').removeClass('burger_menu-active')
         $('.popup').hide()
     })
+
+
+    $('.button_tabs_btn').click(function(){
+        $('.button_tabs_btn').removeClass('tabs_btn-active')
+        $(this).addClass('tabs_btn-active')
+    })
     
 
+
+    $('.button_tabs_btn').click(function(e){
+        e.preventDefault()
+        $('.button_tabs_btn').removeClass('tabs_btn-active')
+        $(this).addClass('tabs_btn-active')
+        $('.block_tabs_content').removeClass('block_tabs_content-active')
+        $( $(this).attr('data-tab') ).addClass('block_tabs_content-active') 
+    })
 
 
 })

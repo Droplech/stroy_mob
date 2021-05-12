@@ -1281,6 +1281,7 @@ a{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     box-shadow: 0px 1px 5.88px 0.12px rgba(121, 121, 121, 0.8);
     padding: 15px 30px;
     margin-bottom: 30px;
@@ -1296,7 +1297,7 @@ a{
 
 .instrument_content_block .instrument_item .slider_block{
     width: 400px;
-    padding-top: 30px;
+    
 }
 .instrument_content_block .instrument_item .slider_block .slider_content{
     width: 333px;

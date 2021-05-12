@@ -730,11 +730,11 @@ a{
 }
 
 .block_tabs_content{
-    opacity: 0;
+    display: none;
 }
 
 .block_tabs_content.block_tabs_content-active{
-    opacity: 1;
+    display: block;
 }
 
 

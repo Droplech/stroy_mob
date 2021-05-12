@@ -39,7 +39,9 @@ $(document).ready(function(){
         $('.button_tabs_btn').removeClass('tabs_btn-active')
         $(this).addClass('tabs_btn-active')
         $('.block_tabs_content').removeClass('block_tabs_content-active')
-        $( $(this).attr('data-tab') ).addClass('block_tabs_content-active') 
+        $('.block_tabs_content').css("display","none")
+        $( $(this).attr('data-tab') ).addClass('block_tabs_content-active')
+        $( $(this).attr('data-tab') ).css("display","block")
     })
 
 

@@ -833,7 +833,7 @@ a{
 .filter_modal{
     position: fixed;
     left: -100%;
-    top: 22%;
+    top: 25%;
     width: 100%;
     height: 100%;
     background-color: #fff;

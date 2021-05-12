@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=800">
-    <title>Contacts</title>
+    <title>Card detail</title>
     <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="icon/rub/fontello.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -262,88 +264,215 @@
     </header>
 
     <main>
-        <section class="contacts">
+        <section class="card_detail">
             <div class="title">
-                <h1>Контакты</h1>
+                <h3>Контакты</h3>
             </div>
-            <div class="phone_mail">
-
-                <div class="phone">
-                    <span>Телефон:</span>
-                    <a href="tel:+74993780888">+7(499)378-08-88</a>
-                </div>
-
-                <div class="mail">
-                    <span>Электронная почта:</span>
-                    <a href="mailto:info@stroymall.su">info@stroymall.su</a>
-                </div>
+            <div class="back_page">
+                <a href="#">
+                    <div class="icon">
+                        <img src="img/filters/arrow.png" alt="">
+                    </div>
+                    <span>Анкерный крепеж</span>
+                </a>
             </div>
 
-            <div class="contacts_wrapepr">
+            <div class="card_detail_wrapper">
+                <p class="prod_name">
+                    Анкер двухраспорный с кольцом  10х100х14 РУСКОНЕКТ
+                </p>
 
-                <div class="contacts_shops">
+                <div class="block_slider_product">
 
-                    <div class="left">
-                        <div class="title_shops">
-                            <span>СтройМолл, мц «Москва»</span>
-                        </div>
-                        <div class="info_contacts">
-                            <div class="date_week">
-                                <span>Время работы:</span>
-                                <p>пн-вс 10:00-22:00</p>
+                    <div class="product_slider swiper-container" style="height: 100%;">
+
+                        <div class="product_slider_wrapper swiper-wrapper">
+
+                            <div class="product_slider_item swiper-slide">
+                                <img src="img/prod_card/img.png" alt="">
                             </div>
-                            <div class="adres">
-                                <span>Адрес:</span>
-                                <p>Москва, Каширское шоссе 61, корп. 3А</p>
+                            <div class="product_slider_item swiper-slide">
+                                <img src="img/prod_card/img.png" alt="">
                             </div>
-                           
-                        </div>
-                    </div>
-                    <div class="right photo_shops">
-                        <img src="img/contacts/pgoto_shops.png" alt="">
-                    </div>
-
-                </div>
-
-                <div class="contacts_shops moj_dvor">
-
-                    <div class="left">
-                        <div class="title_shops">
-                            <span>СтройМолл, мд «Можайский двор»</span>
-                        </div>
-                        <div class="info_contacts">
-                            <div class="date_week">
-                                <span>Время работы:</span>
-                                <p>пн-вс 10:00-22:00</p>
+                            <div class="product_slider_item swiper-slide">
+                                <img src="img/prod_card/img.png" alt="">
                             </div>
-                            <div class="adres">
-                                <span>Адрес:</span>
-                                <p>Одинцовский рн. Новоивановское,  ул. Западная стр. 100</p>
+                            <div class="product_slider_item swiper-slide">
+                                <img src="img/prod_card/img.png" alt="">
                             </div>
-                           
+                            <div class="product_slider_item swiper-slide">
+                                <img src="img/prod_card/img.png" alt="">
+                            </div>
+
                         </div>
-                    </div>
-                    <div class="right photo_shops">
-                        <img src="img/contacts/pgoto_shops.png" alt="">
+
+                        <div class="swiper-pagination" id="prod_pagination"></div>
+
                     </div>
 
                 </div>
 
-            </div>
-            <div class="map_block">
-                <h3>Месторасположение </h3>
-                <div class="map">
-                    <img src="img/contacts/map.png" alt="">
+
+
+                <div class="product_item">
+                    <div class="price">
+
+                        <span class="all_price"> 
+                            <span class="price_now" data-value="72.38">72.38</span>  
+                            <i class="icon-rouble"></i>/шт.
+                        </span>
+    
+                        <div class="countPrice_inBasket">
+
+                            <div class="count_price">
+    
+                                <input class="count_info" value="1">
+    
+                                <div class="count_btn">
+                                    <button class="count_minus"><span>-</span></button>
+    
+                                    <button class="count_plus"><span>+</span></button>
+                                </div>
+    
+                            </div>
+    
+                            <a href="#" class="in_basket">
+                                В корзину
+                            </a>
+    
+                        </div>
+    
+    
+                    </div>
+
+                    <div class="favorites_share">
+                        <a href="#" class="favorites">
+                            <div class="icon">
+                                <img src="img/prod_card/like.png" alt="">
+                            </div>
+                            <span>Избранное</span>
+                        </a>
+                        <a href="#" class="share">
+                            <span>Поделиться</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="delivery">
+                    <div class="delivery_info">
+                        <div class="icon">
+                            <img src="img/prod_card/del_icon.png" alt="">
+                        </div>
+                        <div class="txt">
+                            <p>
+                                Доставка
+                               
+                            </p>
+                            <div class="question">
+                                <img src="img/prod_card/123.png" alt="">
+                            </div>
+                            <span>завтра</span>
+                        </div>
+                    </div>
+
+                    <div class="delivery_info">
+                        <div class="icon">
+                            <img src="img/prod_card/del_icon2.png" alt="">
+                        </div>
+                        <div class="txt">
+                            <p>
+                                Самовывоз
+                               
+                            </p>
+                            <div class="question">
+                                <img src="img/prod_card/123.png" alt="">
+                            </div>
+                            <span>Сегодня</span>
+                        </div>
+                    </div>
                 </div>
 
 
+                <div class="description_prod">
+                    <h3>Описание </h3>
+                    <div class="description_block">
+                        <p>
+                            Предназначен для крепления тяжелого оборудования к бетону,
+                            Предназначен для крепления тяжелого оборудования к бетону,
+                            Предназначен для крепления тяжелого оборудования к бетону,
+                            Предназначен для крепления тяжелого оборудования к бетону,
+                            Предназначен для крепления тяжелого оборудования к бетону,
+                            Предназначен для крепления тяжелого оборудования к бетону,
+                            Предназначен для крепления тяжелого оборудования к бетону,
+                            Предназначен для крепления тяжелого оборудования к бетону,
+                            Предназначен для крепления тяжелого оборудования к бетону,
+                            Предназначен для крепления тяжелого оборудования к бетону,
+                            Предназначен для крепления тяжелого оборудования к бетону,
+                            Предназначен для крепления тяжелого оборудования к бетону,
+                            Предназначен для крепления тяжелого оборудования к бетону,
+                            Предназначен для крепления тяжелого оборудования к бетону,
+                            Предназначен для крепления тяжелого оборудования к бетону,
+                            Предназначен для крепления тяжелого оборудования к бетону,
+                            Предназначен для крепления тяжелого оборудования к бетону,
+                            Предназначен для крепления тяжелого оборудования к бетону,
+                            Предназначен для крепления тяжелого оборудования к бетону,
+                            Предназначен для крепления тяжелого оборудования к бетону,
+                            Предназначен для крепления тяжелого оборудования к бетону,
+                        </p>
+                    </div>
+                    <div class="btn_more_description">
+                        <img src="img/filters/arrow.png" alt="">
+                    </div>
+                </div>
 
+                <div class="characteristics">
+                    <div class="characteristics_wrapper">
+                        <div class="characteristics_title">
+                            <span>Характеристики</span>
+                            <div class="icon">
+                                <img src="img/filters/arrow.png" alt="">
+
+                            </div>
+                        </div>
+                        <div class="characteristics_content">
+                            <ul>
+                                <li>
+                                    <span>Артикул</span>
+                                    <span>АК8х120</span>
+                                </li>
+                                <li>
+                                    <span>Длина, мм</span>
+                                    <span>120</span>
+                                </li>
+                                <li>
+                                    <span>Тип товара</span>
+                                    <span>анверный клиновый</span>
+                                </li>
+                                <li>
+                                    <span>Изготовитель</span>
+                                    <span>Tech-KREP</span>
+                                </li>
+                                <li>
+                                    <span>Вес</span>
+                                    <span>0,046 kg</span>
+                                </li>
+                                <li>
+                                    <span>Покрытие</span>
+                                    <span>цинк желтый</span>
+                                </li>
+                                <li>
+                                    <span>Диеметр, мм</span>
+                                    <span>8</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
+
         </section>
     </main>
-
-
-
 
     <footer>
 
@@ -404,6 +533,9 @@
     
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    
 </body>
 </html>
